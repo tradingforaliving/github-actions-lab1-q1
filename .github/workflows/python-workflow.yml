@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: checkout repo
+      uses: actions/checkout@v4.2.2
+      with: 
+        tradingforaliving/github-actions-lab1-q1
+      
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
